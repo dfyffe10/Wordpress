@@ -48,7 +48,7 @@ soralink.me = function(){
     }
 }
 soralink.run = function(){
-    this.sora_included_links = this.commaToArray(typeof(sora_included_links)!="undefined"?sora_included_links:"");
+    this.sora_included_links = this.commaToArray(typeof(sora_included_links)!=sora_included_links:"");
     this.sora_excluded_links = this.commaToArray(window.location.hostname + ',' + (typeof(sora_excluded_links)!="undefined"?sora_excluded_links:""));
     var elementsArray = document.querySelectorAll("a[href]");
     elementsArray.forEach(function(elem) {
